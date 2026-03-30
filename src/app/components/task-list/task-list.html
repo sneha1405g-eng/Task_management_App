@@ -1,0 +1,55 @@
+<div class="page">
+
+  <!-- Center Heading -->
+  <h1 class="app-title">Task Management Application</h1>
+
+  <div class="card">
+
+    <div class="card-header">
+      <h2>Task List</h2>
+      <button routerLink="/add" class="btn btn-primary">New Task</button>
+    </div>
+
+    <div class="toolbar">
+      <button class="btn btn-secondary" (click)="loadTasks()">Refresh</button>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Status</th>
+          <th width="120">Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let task of tasks">
+          <td class="title">{{ task.title }}</td>
+          <td class="desc">{{ task.description }}</td>
+
+          <td>
+            <span class="badge"
+              [ngClass]="task.isCompleted ? 'badge-success' : 'badge-warning'">
+              {{ task.isCompleted ? 'Completed' : 'Pending' }}
+            </span>
+          </td>
+
+          <td>
+            <button class="btn-icon edit"
+              [routerLink]="['/edit', task.id]">Edit</button>
+
+            <button class="btn-icon delete"
+              (click)="deleteTask(task.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div *ngIf="tasks.length === 0" class="empty">
+      No tasks available
+    </div>
+
+  </div>
+</div>

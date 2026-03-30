@@ -1,0 +1,52 @@
+<div class="page">
+
+  <!-- App Title -->
+  <h1 class="app-title">Task Management Application</h1>
+
+  <!-- Form Card -->
+  <div class="form-card">
+
+    <h2 class="form-heading">Create Task</h2>
+
+    <form (ngSubmit)="save()">
+
+      <!-- Title -->
+      <div class="form-group">
+        <label>Task Title</label>
+        <input 
+          type="text"
+          [(ngModel)]="task.title" 
+          name="title" 
+          required 
+          placeholder="Enter task title" />
+      </div>
+
+      <!-- Description -->
+      <div class="form-group">
+        <label>Description</label>
+        <textarea 
+          [(ngModel)]="task.description" 
+          name="description"
+          placeholder="Enter task description">
+        </textarea>
+      </div>
+
+      <!-- Status -->
+      <div class="form-group checkbox">
+        <input 
+          type="checkbox" 
+          [(ngModel)]="task.isCompleted" 
+          name="isCompleted" />
+        <span>Mark as Completed</span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">Save Task</button>
+        <button type="button" class="btn-secondary" routerLink="/">Cancel</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>

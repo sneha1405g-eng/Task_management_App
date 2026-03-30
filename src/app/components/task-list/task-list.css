@@ -1,0 +1,162 @@
+/* Page */
+.page {
+  background: #eef2f7;
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Main Heading */
+.app-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 1100px;
+  margin: auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h2 {
+  color: #34495e;
+}
+
+/* Toolbar */
+.toolbar {
+  margin-bottom: 10px;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background: #2c3e50;
+  color: #ffffff;
+  padding: 14px;
+  font-weight: 500;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.table tr:hover {
+  background: #f8f9fc;
+}
+
+/* Text */
+.title {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.desc {
+  color: #555;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Primary */
+.btn-primary {
+  background: #1f78d1;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #1665b1;
+}
+
+/* Secondary */
+.btn-secondary {
+  background: #6c757d;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background: #565e64;
+}
+
+/* Action buttons */
+.btn-icon {
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+/* Edit */
+.btn-icon.edit {
+  background: #f0ad4e;
+  color: #ffffff;
+}
+
+.btn-icon.edit:hover {
+  background: #d99536;
+}
+
+/* Delete */
+.btn-icon.delete {
+  background: #d9534f;
+  color: #ffffff;
+}
+
+.btn-icon.delete:hover {
+  background: #c9302c;
+}
+
+/* Status badges */
+.badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Completed */
+.badge-success {
+  background: #28a745;
+  color: white;
+}
+
+/* Pending */
+.badge-warning {
+  background: #f39c12;
+  color: white;
+}
+
+/* Empty */
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: #7f8c8d;
+}
